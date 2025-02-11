@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Scrapper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<script>
+<!-- alert("Welcome!") -->
+function alertText(){
+ alert("Please wait while we downloading the images for you")
+
+}
+</script>
+<body style="background-color:#EEE2DC">
+<div class="container text-center mt-3 mb-3">
+    <div class="intro mt-3 mb-3">
+        <h1>My Image Scrapper</h1>
+    </div>
+
+    <form action="/review" method="POST">
+        <div class="form-group mt-3">
+            <label for="keyword"><h3>Enter Your Keyword</h3></label>
+            <input type="keyword" class="form-control" id="keyword" name="keyword" aria-describedby="emailHelp">
+            <small id="smallkeyword" class="form-text text-muted">Please enter a valid keyword.</small>
+
+        </div>
+        <div class="form-group mt-3">
+            <label for="number_of_images"><h3>Enter the number of images</h3></label>
+            <input type="number" class="form-control" name="number_of_images" id="number_of_images">
+            <small id="smallnumber" class="form-text text-muted">Please enter a small number(less than 20) for faster load. </small>
+        </div>
+
+        <button type="submit" class="btn btn-primary" onclick="alertText()">Submit</button>
+    </form>
+
+
+</div>
+
+</body>
+</html>
